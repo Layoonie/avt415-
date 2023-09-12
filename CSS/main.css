@@ -1,0 +1,59 @@
+body {
+  background-color: #F0F8FF;
+  font-family: 'Patrick Hand', cursive;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+h1 {
+  text-align: left;
+  color: #9EA9ED;
+  font-size: 100px;
+  margin-bottom: 0;
+}
+
+h2 {
+  text-align: left;
+  color: #7575CF;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+h3 {
+  text-align: left;
+  color: #9FA9E7;
+  font-size: 25px;
+  margin-bottom: 0;
+}
+
+h4 {
+  text-align: left;
+  color: #FE7F9C;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+ul {
+    list-style: none; /* Remove default bullets */
+  }
+
+
+ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: hotpink; /* Change the color */
+    font-size: 25px;
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+}
+
+a:visited {
+  color: #5453A6;
+}
+
+a:hover {
+  color: hotpink;
+  font-style: italic;
+}
