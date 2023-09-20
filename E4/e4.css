@@ -1,0 +1,112 @@
+
+body {
+  font-family: 'Sarabun', sans-serif;
+  margin-top: 100px;
+  margin-bottom: 300px;
+  margin-right: 100px;
+  margin-left: 100px;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 430vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+hr {
+  border: 5px solid #4CBEFB;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  margin-right: 500px;
+  margin-left: 0px;
+}
+
+h1 {
+  text-align: left;
+  color: #FFFF;
+  font-family: 'Staatliches', cursive;
+  font-size: 70px;
+  margin-right: 500px;
+  margin-bottom: 0px;
+  font-weight: 600px;
+}
+
+h2 {
+  text-align: left;
+  color: #4CBEFB;
+  font-size: 20px;
+  margin-right: 700px;
+  margin-bottom: 35px;
+  font-weight: 600px;
+}
+
+h3 {
+  text-align: left;
+  color: #FFFF;
+  font-family: 'Staatliches', cursive;
+  font-size: 18px;
+  margin-bottom: -35px;
+  font-weight: 400px;
+}
+
+h4 {
+  text-align: left;
+  color: #FFFF;
+  font-family: 'Staatliches', cursive;
+  font-size: 50px;
+  margin-bottom: 0;
+  margin-right: 600px;
+  animation: 3s infinite alternate slidein;
+}
+
+h6 {
+  text-align: left;
+  color: #FFFF;
+  font-size: 18px;
+  margin-bottom: 50px;
+  font-family: 'Staatliches', cursive;
+  font-weight: 400px;
+}
+
+p {
+  text-align: left;
+  color: #FFFF;
+  font-size: 17px;
+  font-weight: 600;
+  margin-right: 700px;
+  margin-bottom: 60;
+}
+
+ul {
+    list-style: none; /* Remove default bullets */
+  }
+
+
+ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: hotpink; /* Change the color */
+    font-size: 25px;
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+}
+
+a:visited {
+  color: #5453A6;
+}
+
+a:hover {
+  color: hotpink;
+  font-style: italic;
+}
